@@ -1,0 +1,14 @@
+* source 231001_EX1_FIRST
+Q_Q1         N00467 N00412 N00463 Q2N3904
+C_C1         N00408 N00412  5uF  TC=0,0 
+R_R1         N00412 N00505  123k TC=0,0 
+V_V1         N00505 0 10Vdc
+V_V2         N00401 0 DC 0Vdc AC 1Vac 
+R_R2         0 N00412  58k TC=0,0 
+R_R3         N00408 N00401  0.3k TC=0,0 
+R_R4         N00467 N00505  8k TC=0,0 
+R_R5         0 N00463  5k TC=0,0 
+C_C2         N00467 VOUT  5uF  TC=0,0 
+C_C_E         0 N00463  {C_E}  TC=0,0 
+R_R6         0 VOUT  2k TC=0,0 
+.PARAM  c_e=50uf

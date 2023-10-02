@@ -1,0 +1,24 @@
+* source 231001_EX2
+C_C1         N01190 N01090  10uF  TC=0,0 
+Q_Q1         VOUT1 N01090 N01206 Q2N3904
+R_R4         VOUT1 N01032  6.5k TC=0,0 
+V_V2         N01182 0 DC 0Vdc AC 1Vac 
+C_C_E         0 N01206  10uF  TC=0,0 
+R_R1         N01090 N01032  180k TC=0,0 
+R_R3         N01190 N01182  1k TC=0,0 
+V_V1         N01032 0 12Vdc
+R_R2         0 N01090  40k TC=0,0 
+R_R5         0 N01206  1.5k TC=0,0 
+R_R8         N01978 N01970  1k TC=0,0 
+V_V4         N01970 0 DC 0Vdc AC 1Vac 
+R_R9         0 N01906  83k TC=0,0 
+C_C2         N01978 N01906  10uF  TC=0,0 
+R_R10         0 N01994  1.5k TC=0,0 
+Q_Q2         N01910 N01906 N01994 Q2N3904
+C_C_E1         0 N01994  10uF  TC=0,0 
+C_C3         0 N02499  10uF  TC=0,0 
+R_R12         VOUT2 N02447  5k TC=0,0 
+Q_Q3         VOUT2 N02499 N01910 Q2N3904
+R_R11         N02499 N02447  180k TC=0,0 
+V_V5         N02447 0 12Vdc
+R_R13         N01906 N02499  40k TC=0,0 

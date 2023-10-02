@@ -1,0 +1,252 @@
+
+**** 10/02/23 12:32:19 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Task1"  [ c:\users\kimhyeongjun\documents\github\2023-2-engineering-design\pspice\first\231001_ex1_first-PSp
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Task1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\KimHyeongJun\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 20 1Hz 10kHz
+.STEP PARAM C_E LIST 50uF, 100uF, 150uF, 200uF 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 231001_EX1_FIRST
+Q_Q1         N00467 N00412 N00463 Q2N3904
+C_C1         N00408 N00412  5uF  TC=0,0 
+R_R1         N00412 N00505  123k TC=0,0 
+V_V1         N00505 0 10Vdc
+V_V2         N00401 0 DC 0Vdc AC 1Vac 
+R_R2         0 N00412  58k TC=0,0 
+R_R3         N00408 N00401  0.3k TC=0,0 
+R_R4         N00467 N00505  8k TC=0,0 
+R_R5         0 N00463  5k TC=0,0 
+C_C2         N00467 VOUT  5uF  TC=0,0 
+C_C_E         0 N00463  {C_E}  TC=0,0 
+R_R6         0 VOUT  2k TC=0,0 
+.PARAM  c_e=50uf
+
+**** RESUMING Task1.cir ****
+.END
+
+**** 10/02/23 12:32:19 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Task1"  [ c:\users\kimhyeongjun\documents\github\2023-2-engineering-design\pspice\first\231001_ex1_first-PSp
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         
+               NPN             
+       LEVEL    1            
+          IS    6.734000E-15 
+          BF  416.4          
+          NF    1            
+         VAF   74.03         
+         IKF     .06678      
+         ISE    6.734000E-15 
+          NE    1.259        
+          BR     .7371       
+          NR    1            
+         ISS    0            
+          RB   10            
+          RE    0            
+          RC    1            
+         CJE    4.493000E-12 
+         VJE     .75         
+         MJE     .2593       
+         CJC    3.638000E-12 
+         VJC     .75         
+         MJC     .3085       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  301.200000E-12 
+         XTF    2            
+         VTF    4            
+         ITF     .4          
+          TR  239.500000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 10/02/23 12:32:19 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Task1"  [ c:\users\kimhyeongjun\documents\github\2023-2-engineering-design\pspice\first\231001_ex1_first-PSp
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM C_E =   50.0000E-06
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( VOUT)    0.0000  (N00401)    0.0000 (N00408)    0.0000 (N00412)    3.0534     
+
+(N00463)    2.4080 (N00467)    6.1778 (N00505)   10.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.343E-04
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   5.34E-03  WATTS
+
+
+**** 10/02/23 12:32:19 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Task1"  [ c:\users\kimhyeongjun\documents\github\2023-2-engineering-design\pspice\first\231001_ex1_first-PSp
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM C_E =  100.0000E-06
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( VOUT)    0.0000  (N00401)    0.0000 (N00408)    0.0000 (N00412)    3.0534     
+
+(N00463)    2.4080 (N00467)    6.1778 (N00505)   10.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.343E-04
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   5.34E-03  WATTS
+
+
+**** 10/02/23 12:32:19 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Task1"  [ c:\users\kimhyeongjun\documents\github\2023-2-engineering-design\pspice\first\231001_ex1_first-PSp
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM C_E =  150.0000E-06
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( VOUT)    0.0000  (N00401)    0.0000 (N00408)    0.0000 (N00412)    3.0534     
+
+(N00463)    2.4080 (N00467)    6.1778 (N00505)   10.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.343E-04
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   5.34E-03  WATTS
+
+
+**** 10/02/23 12:32:19 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Task1"  [ c:\users\kimhyeongjun\documents\github\2023-2-engineering-design\pspice\first\231001_ex1_first-PSp
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM C_E =  200.0000E-06
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( VOUT)    0.0000  (N00401)    0.0000 (N00408)    0.0000 (N00412)    3.0534     
+
+(N00463)    2.4080 (N00467)    6.1778 (N00505)   10.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.343E-04
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   5.34E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/02/23 12:32:19 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Task1"  [ c:\users\kimhyeongjun\documents\github\2023-2-engineering-design\pspice\first\231001_ex1_first-PSp
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM C_E =  200.0000E-06
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .20
+
